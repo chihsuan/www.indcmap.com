@@ -20,12 +20,13 @@ a {
 }
 
 #map { 
-    height: 93%; 
+    height: 100%; 
     width: 100%;
     position: absolute;
-    top: 7%;
 }
-
+#map .leaflet-top {
+    top: 60px;
+}
 .info.leaflet-control {
     min-width: 174px;
 }
@@ -34,11 +35,14 @@ header {
     display: table;
 
 }
+nav.navbar.navbar-default.navbar-fixed-top {
+    background-color: rgba(248, 248, 248, 0.6);
+}
 section.panel {
     position: relative;
     width: 80%;
     height: 25%;
-    top: 15%;
+    top: 20%;
     z-index: 99;
     background: #fff;
     margin-top: 0;

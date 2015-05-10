@@ -5,6 +5,13 @@
   var showLinks = false;
   var info = L.control();
   var topoLayer;
+  var treeIcon = L.icon({
+    iconUrl: './img/tree.png',
+    iconSize:     [30, 35], // size of the icon
+    iconAnchor:   [17, 42], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
+  });
+
 
   window.resetView = resetView;
   window.showInfo = showInfo;
@@ -12,6 +19,7 @@
 
   $( document ).ready(function() {
     initMap();
+    //addMarkers();
     $.getJSON('./data/countries.geo.topo.json', function(topoData) {
        topoLayer = addTopoData(topoData);
        topoLayer.addTo(map);
@@ -30,6 +38,7 @@
       onEachFeature: onEachFeature
     });
   }  
+
 
   function initMap() {
     map = new L.Map('map');
@@ -58,6 +67,13 @@
       fillOpacity: 0.4
     };
   } 
+
+
+  function addMarkers() {
+    var marker = L.marker([23, 122],
+      {icon: treeIcon, opacity: 0.9})
+      .addTo(map);   
+  }
 
   function resetHighlight(e) {
     topoLayer.resetStyle(e.target);

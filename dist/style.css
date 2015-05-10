@@ -7,7 +7,7 @@ a{color:#337ab7;text-decoration:blink}
 #map .leaflet-top{top:60px}
 header{vertical-align:middle;display:table}
 nav.navbar.navbar-default.navbar-fixed-top{background-color:rgba(248,248,248,.6)}
-section.panel{position:relative;width:80%;height:25%;top:20%;z-index:99;background:#fff;margin:auto;display:none}
+section.panel{position:relative;width:80%;max-height:60%;top:20%;z-index:99;background:#fff;margin:auto;display:none}
 .close-button{float:right}
 .info{padding:6px 8px;font:14px/16px Arial,Helvetica,sans-serif;background:#fff;background:rgba(255,255,255,.8);box-shadow:0 0 15px rgba(0,0,0,.2);border-radius:5px}
 .info h4{margin:0 0 5px;color:#777}

@@ -41,7 +41,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 section.panel {
     position: relative;
     width: 80%;
-    height: 25%;
+    max-height: 60%;
     top: 20%;
     z-index: 99;
     background: #fff;

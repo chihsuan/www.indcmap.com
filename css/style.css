@@ -38,10 +38,17 @@ header {
 nav.navbar.navbar-default.navbar-fixed-top {
     background-color: rgba(248, 248, 248, 0.6);
 }
+.nav.navbar-nav .logo a{
+    margin: 0;
+    padding: 0;
+}
+.nav.navbar-nav #taiwansat {
+    padding: 5px;
+}
 section.panel {
     position: relative;
     width: 80%;
-    max-height: 60%;
+    max-height: 70%;
     top: 20%;
     z-index: 99;
     background: #fff;
@@ -51,6 +58,13 @@ section.panel {
 }
 .close-button {
     float: right;
+}
+footer {
+    position: fixed;
+    bottom: 20px;
+    right: 5px;
+    z-index: 10; 
+    color: #777;
 }
 section.panel{
     display: none;

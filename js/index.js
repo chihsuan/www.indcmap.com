@@ -122,13 +122,13 @@
     }
   };
 
-  var legend = L.control({position: 'bottomright'});
+  var legend = L.control({position: 'bottomleft'});
 
   legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend');
-    var color = ['#684064', '#D24C39', '#E39941', '#39AADD'];
-    var labels = [''];
+    var color = ['#F9BD52'];
+    var labels = ['尚未提交減碳承諾'];
 
     for (var i = 0; i < labels.length; i++) {
       div.innerHTML += '<i style="background:' + color[i] 

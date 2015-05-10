@@ -68,6 +68,11 @@ footer {
 }
 section.panel{
     display: none;
+    overflow: auto;
+}
+ul li .laguage {
+    margin: 10px;
+    background-color: rgba(248,248,248,.6);
 }
 .info {
     padding: 6px 8px;
@@ -80,6 +85,7 @@ section.panel{
 .info h4 {
     margin: 0 0 5px;
     color: #777;
+    text-align: center;
 }
 .info.leaflet-control {
     width: 200px;
@@ -109,6 +115,14 @@ i.fa.fa-refresh {
     height: 38px;
     text-align: center;
     font-size: 20px;
+}
+.penguin {
+    position: absolute;
+    z-index: 99;
+    width: 150px;
+    margin: auto;
+    bottom: 60px;
+    left: 10px;
 }
 @media only screen and (max-width: 700px) {
     .info.leaflet-control {

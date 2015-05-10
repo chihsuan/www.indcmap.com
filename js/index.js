@@ -127,8 +127,8 @@
   legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend');
-    var color = ['#F9BD52'];
-    var labels = ['尚未提交減碳承諾'];
+    var color = ['#F9BD52', '#B50000'];
+    var labels = ['尚未提交減碳承諾', '已提交減碳承諾'];
 
     for (var i = 0; i < labels.length; i++) {
       div.innerHTML += '<i style="background:' + color[i] 

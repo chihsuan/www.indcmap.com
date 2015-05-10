@@ -65,6 +65,7 @@ footer {
     right: 5px;
     z-index: 10; 
     color: #777;
+    font-size: 10px;
 }
 section.panel{
     display: none;
@@ -124,6 +125,7 @@ i.fa.fa-refresh {
     bottom: 60px;
     left: 10px;
 }
+
 @media only screen and (max-width: 700px) {
     .info.leaflet-control {
         width: 140px;

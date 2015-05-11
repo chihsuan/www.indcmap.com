@@ -9,7 +9,6 @@
     $scope.selectedLang = 'tw';
     $scope.changeLanguage = changeLanguage;
     $rootScope.page = {};
-    setLang($scope.selectedLang);
 
     function setLang(lang) {
       $http.get('./data/' + lang +'.json').then(function(response) {
@@ -21,8 +20,6 @@
     function changeLanguage() {
       setLang($scope.selectedLang);
     }
-
-
   }
 
 })();

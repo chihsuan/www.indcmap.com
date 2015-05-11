@@ -5,7 +5,7 @@
   window.hideInfo = hideInfo;
   var textCtrl = require('./controller/textController');
 
-  var app = angular.module('myApp', [])
+  var app = angular.module('myApp', ['ngRoute'])
                    .controller('TextController', textCtrl);
   
   textCtrl.$inject = ['$scope', '$rootScope', '$location', '$http', 'mapService'];

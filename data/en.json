@@ -1,5 +1,5 @@
 {
-    "title": "世界各國減碳承諾",
+    "title": "INDC map",
     "navItem1": "About Us",
     "navItem2": "What's INDC",
     "navItem3": "Feedback",
@@ -14,5 +14,7 @@
         "submit": "submit"
     },
     "selectCountry": "select country",
-    "labels" : ["INDC unsubmitted", "INDC submitted"]
+    "labels" : ["INDC unsubmitted", "INDC submitted"],
+    "twycc": "TWYCC",
+    "taiwanstat": "TaiwanStat"
 }

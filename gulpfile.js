@@ -7,7 +7,7 @@ var rename = require("gulp-rename");
 
 gulp.task('scripts', function() {
     //single entry point to browserify
-    gulp.src(['js/index.js'])
+    gulp.src(['./js/index.js'])
         .pipe(browserify({
         }))
         .pipe(uglify())
@@ -33,7 +33,7 @@ gulp.task('minify-css', function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./js/*js', ['scripts']);
+  gulp.watch('./js/**/*js', ['scripts']);
   gulp.watch('./index_edit.html', ['minify-html']);
   gulp.watch('./css/*css', ['minify-css']);
 });

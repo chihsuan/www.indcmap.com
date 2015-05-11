@@ -37,8 +37,9 @@
       osm.addTo(map);
     }
 
-    function updateLang(page) {
+    function updateLang(page, data) {
       vm.page = page;
+      vm.data = data;
       if (countryJson) {
         map.removeLayer(topoLayer);
         map.removeControl(info);
@@ -82,14 +83,20 @@
 
     function style(feature) {
       return {
-        fillColor: '#F9BD52', 
+        fillColor: getColor(feature), 
         weight: 2,
         opacity: 1,
         color: '#eee',
         dashArray: '3',
-        fillOpacity: 0.4
+        fillOpacity: 0.55
       };
     }
+
+    function getColor (feature) {
+      return feature.properties.name in vm.data 
+          ? '#B50000'
+          : '#F9BD52';
+    } 
 
     function onEachFeature(feature, layer) {
       layer.on({
@@ -97,9 +104,33 @@
         mouseout: resetHighlight,
         click: zoomToFeature
       });
-      layer.bindPopup('<h2>' + feature.properties.name +'</h2>'
+      bindContent(feature, layer);
+    }
+
+    function bindContent(feature, layer) {
+      var name = feature.properties.name;
+      if (name in vm.data) {
+        layer.bindPopup('<h2>' + name +'</h2>'
                     + '<table class="table table-condensed"><tbody>'
-                    + '<tr><td><strong>INDC summary </strong></td><td>Limiting anthropogenic greenhouse gases in Russia to 70-75% of 1990 levels by the year 2030 might be a long-term indicator, subject to the maximum possible account of absorbing capacity of forests.</td></tr></tbody></table>');
+                    + '<tr><td><strong>INDC summary</strong></td><td>' 
+                    + vm.data[name].INDCsummary
+                    + '</td></tr>'
+                    + '<tr><td><strong>INDC type</strong></td><td>' 
+                    + vm.data[name].INDCtype
+                    + '</td></tr>'
+                    + '<tr><td><strong>GHG target type</strong></td><td>' 
+                    + vm.data[name].GHGtarget
+                    + '</td></tr>'
+                    + '<tr><td><strong>Link to the submission</strong></td><td>' 
+                    + vm.data[name].Linkto
+                    + '</td></tr>'
+                    + '<tr><td><strong>Source</strong></td><td>WRI, CAIT 2.0. 2015. CAIT Paris Contributions Map. Washington, DC: World Resources Institute. Available at: http://cait2.wri.org/indcs/</td></tr>'
+                    + '</tbody></table>', {minWidth: 500});
+      }
+      else {
+        layer.bindPopup('<h2>' + feature.properties.name 
+          +'</h2><p>no submitted</p>');
+      }
     }
  
     function resetHighlight(e) {

@@ -58,6 +58,7 @@ section.panel {
 }
 .close-button {
     float: right;
+    font-size: 18px;
 }
 footer {
     position: fixed;

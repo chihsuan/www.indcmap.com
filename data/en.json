@@ -1,0 +1,18 @@
+{
+    "title": "世界各國減碳承諾",
+    "navItem1": "About Us",
+    "navItem2": "What's INDC",
+    "navItem3": "Feedback",
+    "aboutUs": {
+        "twycc": "台灣青年氣候聯盟Taiwan Youth Climate Coalition (簡稱TWYCC)，成立於2011年，是由來自台灣各地對環境保育、氣候變遷充滿熱情的青年組成的團體，為台灣第一個以青年為主運作的環境NGO，同時也以台灣環境議題的青年交流平台為宗旨，擴展青年氣候行動。",
+        "taiwanstat": "生長在台灣的我們，很少從一個宏觀的角度看整個台灣的經濟、法律、交通、教育... ，而我們相信數據可以幫我們更了解我們身長在的這片土地上的一切。讓我們來用數據看台灣！"
+    },
+    "INDC": "",
+    "feedback": { 
+        "name": "name",
+        "message": "message",
+        "submit": "submit"
+    },
+    "selectCountry": "select country",
+    "labels" : ["INDC unsubmitted", "INDC submitted"]
+}

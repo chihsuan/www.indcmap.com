@@ -87,7 +87,7 @@
         weight: 2,
         opacity: 1,
         color: '#eee',
-        dashArray: '3',
+        dashArray: '',
         fillOpacity: 0.55
       };
     }
@@ -140,7 +140,7 @@
     function highlightFeature(e) {
       var layer = e.target;
       layer.setStyle({
-        weight: 5,
+        weight: 2,
         color: '#666',
         dashArray: '',
         fillOpacity: 0.7

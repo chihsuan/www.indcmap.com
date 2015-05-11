@@ -131,4 +131,12 @@ i.fa.fa-refresh {
     .info.leaflet-control {
         width: 140px;
     }
+    .leaflet-popup-content {
+        width: 260px !important;
+        max-height: 320px;
+        overflow: auto;
+    }
+    img.penguin {
+        width: 100px;
+    }
 }

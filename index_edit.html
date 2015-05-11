@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -30,13 +32,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
        </button>
-       <a class="navbar-brand" href="http://www.indcmap.com/">{{page.title}}</a>
+       <a class="navbar-brand" href="http://www.indcmap.com/" ng-bind="page.title"></a>
       </div>
        <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#about-us" onclick="showInfo('#about-us')">{{page.navItem1}}</a></li>
-          <li><a href="#indc" onclick="showInfo('#indc')">{{page.navItem2}}</a></li>
-          <li><a href="#feedback" onclick="showInfo('#feedback')">{{page.navItem3}}</a></li>
+          <li><a href="#about-us" onclick="showInfo('#about-us')" ng-bind="page.navItem1"></a></li>
+          <li><a href="#indc" onclick="showInfo('#indc')" ng-bind="page.navItem2"></a></li>
+          <li><a href="#feedback" onclick="showInfo('#feedback')" ng-bind="page.navItem3"></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
@@ -112,8 +114,6 @@
     </footer>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    <script src="./bower_components/angular/angular.min.js"></script>
-    <script src="./bower_components/angular-route/angular-route.min.js"></script>
     <script src="./dist/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

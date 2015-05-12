@@ -16,5 +16,6 @@
     "selectCountry": "select a country",
     "labels" : ["INDC unsubmitted", "INDC submitted"],
     "twycc": "TWYCC",
-    "taiwanstat": "TaiwanStat"
+    "taiwanstat": "TaiwanStat",
+    "unsubmitted": "unsubmitted"
 }

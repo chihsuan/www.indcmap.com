@@ -110,8 +110,12 @@
 
     function bindContent(feature, layer) {
       var name = feature.properties.name;
+      var nameLang = (vm.countryLang[name] && vm.countryLang[name][vm.lang])
+        ? vm.countryLang[name][vm.lang]
+        : name;
+      
       if (name in vm.data) {
-        layer.bindPopup('<h2>' + name +'</h2>'
+        layer.bindPopup('<h2>' + nameLang +'</h2>'
                     + '<table class="table table-condensed"><tbody>'
                     + '<tr><td><strong>INDC summary</strong></td><td>' 
                     + vm.data[name].INDCsummary
@@ -129,8 +133,8 @@
                     + '</tbody></table>', {minWidth: 500});
       }
       else {
-        layer.bindPopup('<h2>' + feature.properties.name 
-          +'</h2><p>no submitted</p>');
+        layer.bindPopup('<h2>' + nameLang
+          +'</h2><p>' + vm.page.unsubmitted + '</p>');
       }
     }
  

@@ -16,5 +16,6 @@
     "selectCountry": "選擇一個國家",
     "labels" : ["尚未提交減碳承諾", "已提交減碳承諾"],
     "twycc": "台灣青年氣候聯盟",
-    "taiwanstat": "用數據看台灣"
+    "taiwanstat": "用數據看台灣",
+    "unsubmitted": "尚未提交減碳承諾"
 }

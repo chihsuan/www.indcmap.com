@@ -96,7 +96,7 @@
     function getColor (feature) {
       return feature.properties.name in vm.data 
           ? '#B50000'
-          : '#F9BD52';
+          : '#D5D5D5';
     } 
 
     function onEachFeature(feature, layer) {
@@ -179,7 +179,7 @@
 
     function addLegend () {
       var div = L.DomUtil.create('div', 'info legend');
-      var color = ['#F9BD52', '#B50000'];
+      var color = ['#D5D5D5', '#B50000'];
 
       for (var i = 0; i < vm.page.labels.length; i++) {
         div.innerHTML += '<i style="background:' + color[i] 

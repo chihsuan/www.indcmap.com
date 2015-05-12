@@ -31,15 +31,16 @@
 
       var url = 'http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png';
       var attrib = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
-      var osm = new L.TileLayer(url, {minZoom: 2,  maxZoom: 16, attribution: attrib});   
+      var osm = new L.TileLayer(url, {minZoom: 2,  maxZoom: 16, attribution: attrib, continuousWorld: true});   
 
       map.setView(new L.LatLng(50, 15), 2);
       osm.addTo(map);
     }
 
-    function updateLang(page, data) {
+    function updateLang(lang, page, data) {
       vm.page = page;
       vm.data = data;
+      vm.lang = lang;
       if (countryJson) {
         map.removeLayer(topoLayer);
         map.removeControl(info);
@@ -164,8 +165,12 @@
 
     function infoUpdate (props) {
       if (props) {
-        this._div.innerHTML = '<h4>' + props.name +'</h4>';
+        var name = vm.countryLang[props.name][vm.lang];
+        this._div.innerHTML = name 
+          ? '<h4>' + name +'</h4>'
+          : '<h4>' + props.name + '</h4>';
       }
+
     };
 
     function addLegend () {

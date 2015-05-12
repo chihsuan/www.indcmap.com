@@ -11,18 +11,25 @@
     $rootScope.page = {};
     var langs = {};
     var mapData = {}
+    initCountryLang();
     setLang($scope.selectedLang);
+
+    function initCountryLang() {
+      $http.get('./data/lang.json').then(function(resp) {
+        mapService.countryLang = resp.data;
+      });
+    }
 
     function setLang(lang) {
       if (lang in langs) {
         $rootScope.page = langs[lang];
-        mapService.updateLang(langs[lang], mapData[lang]);
+        mapService.updateLang(lang, langs[lang], mapData[lang]);
       }
       else {
         $http.get('./data/data.json').then(function(resp) {
           $http.get('./data/' + lang +'.json').then(function(response) {
             $rootScope.page = response.data;
-            mapService.updateLang($rootScope.page, resp.data);
+            mapService.updateLang(lang, $rootScope.page, resp.data);
             langs[lang] = response.data;
             mapData[lang] = resp.data;
           });

@@ -35,6 +35,16 @@
 
       map.setView(new L.LatLng(50, 15), 2);
       osm.addTo(map);
+      map.on('popupopen', function(e) {
+        $('.leaflet-top').hide();
+        $('.leaflet-bottom').hide();
+        $('.penguin').hide();
+      });
+      map.on('popupclose', function(e) {
+        $('.leaflet-top').show();
+        $('.leaflet-bottom').show();
+        $('.penguin').show();
+      });
     }
 
     function updateLang(lang, page, data) {
@@ -131,6 +141,7 @@
                     + '</td></tr>'
                     + '<tr><td><strong>Source</strong></td><td>WRI, CAIT 2.0. 2015. CAIT Paris Contributions Map. Washington, DC: World Resources Institute. Available at: http://cait2.wri.org/indcs/</td></tr>'
                     + '</tbody></table>', {minWidth: 500});
+
       }
       else {
         layer.bindPopup('<h2>' + nameLang
@@ -140,6 +151,7 @@
  
     function resetHighlight(e) {
       topoLayer.resetStyle(e.target);
+      info.update();
     }
 
     function highlightFeature(e) {
@@ -174,7 +186,9 @@
           ? '<h4>' + name +'</h4>'
           : '<h4>' + props.name + '</h4>';
       }
-
+      else {
+        this._div.innerHTML = '<h4>' + vm.page.selectCountry + '</h4>';
+      }
     };
 
     function addLegend () {

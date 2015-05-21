@@ -121,11 +121,16 @@ i.fa.fa-refresh {
 .penguin {
     position: absolute;
     z-index: 99;
-    width: 150px;
+    width: 120px;
     margin: auto;
     bottom: 60px;
     left: 10px;
 }
+.leaflet-popup-content {
+    max-height: 400px;
+    overflow: auto;
+}
+
 
 @media only screen and (max-width: 700px) {
     .info.leaflet-control {
@@ -137,6 +142,6 @@ i.fa.fa-refresh {
         overflow: auto;
     }
     img.penguin {
-        width: 100px;
+        width: 80px;
     }
 }

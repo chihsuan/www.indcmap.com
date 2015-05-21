@@ -18,14 +18,14 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-              url: "https://docs.google.com/forms/d/",
+              url: "https://docs.google.com/forms/d/1yBCQ3_Zxq3QaV5WSF8lJ_x4np10gGsSsfiRIOCLB09Y/formResponse",
                 type: "POST",
                 crossDomain: true,
                 dataType: 'jsonp',
                 data: {
-                    "entry.410842087": name,
-                    "entry.1917516394": email,
-                    "entry.1045627991": message
+                    "entry.2137277841": name,
+                    "entry.812264679": email,
+                    "entry.1168969539": message
                 },
                 cache: false,
                 success: function() {
@@ -42,6 +42,7 @@ $(function() {
                     $('#contactForm').trigger("reset");
                 },
                 error: function(response) {
+                         console.log(response);
                   if (response.status == 200) {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");

@@ -125,22 +125,41 @@
         : name;
       
       if (name in vm.data) {
-        layer.bindPopup('<h2>' + nameLang +'</h2>'
-                    + '<table class="table table-condensed"><tbody>'
-                    + '<tr><td><strong>INDC summary</strong></td><td>' 
-                    + vm.data[name].INDCsummary
-                    + '</td></tr>'
-                    + '<tr><td><strong>INDC type</strong></td><td>' 
-                    + vm.data[name].INDCtype
-                    + '</td></tr>'
-                    + '<tr><td><strong>GHG target type</strong></td><td>' 
-                    + vm.data[name].GHGtarget
-                    + '</td></tr>'
-                    + '<tr><td><strong>Link to the submission</strong></td><td>' 
-                    + vm.data[name].Linkto
-                    + '</td></tr>'
+
+        if (vm.lang == 'en') {
+          layer.bindPopup('<h2>' + nameLang +'</h2>'
+                      + '<table class="table table-condensed"><tbody>'
+                      + '<tr><td><strong>INDC summary</strong></td><td>' 
+                      + vm.data[name].INDCsummary
+                      + '</td></tr>'
+                      + '<tr><td><strong>INDC type</strong></td><td>' 
+                      + vm.data[name].INDCtype
+                      + '</td></tr>'
+                      + '<tr><td><strong>GHG target type</strong></td><td>' 
+                      + vm.data[name].GHGtarget
+                      + '</td></tr>'
+                      + '<tr><td><strong>Link to the submission</strong></td><td>' 
+                      + vm.data[name].Linkto
+                      + '</td></tr>'
+                      + '<tr><td><strong>Source</strong></td><td>WRI, CAIT 2.0. 2015. CAIT Paris Contributions Map. Washington, DC: World Resources Institute. Available at: http://cait2.wri.org/indcs/</td></tr>'
+                      + '</tbody></table>', {minWidth: 500});
+          }
+        else {
+          var content = '<h2>' + nameLang +'</h2>'
+                    + '<table class="table table-condensed"><tbody>';
+          for (var key in vm.data[name]) {
+             content = content 
+                    + '<tr><td><strong>'
+                    + key
+                    + '</strong></td><td>' 
+                    + vm.data[name][key]
+                    + '</td></tr>';
+          }
+          layer.bindPopup(
+                    content
                     + '<tr><td><strong>Source</strong></td><td>WRI, CAIT 2.0. 2015. CAIT Paris Contributions Map. Washington, DC: World Resources Institute. Available at: http://cait2.wri.org/indcs/</td></tr>'
                     + '</tbody></table>', {minWidth: 500});
+        }
 
       }
       else {

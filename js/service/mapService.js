@@ -5,6 +5,12 @@
                    .factory('mapService', mapService);
   
   mapService.$inject = ['$http'];
+  var euIcon = L.icon({
+    iconUrl: 'http://europa.eu/wel/template-2011/images/europa-flag.gif',
+    iconSize:     [25, 25], // size of the icon
+    iconAnchor:   [17, 42], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
+  });
 
   function mapService ($http) {
    
@@ -62,6 +68,12 @@
       addTopoLayer();
       info.onAdd = addInfo;
       info.addTo(map);
+      if ('EU' in vm.data) {
+          var content = getContent('EU', '歐盟');
+          L.marker([50.843611, 4.382418], {icon: euIcon}).addTo(map).bindPopup(content); 
+          return;
+      }
+
 
       legend.onAdd = addLegend;
       legend.addTo(map);
@@ -125,7 +137,6 @@
         : name;
       
       if (name in vm.data) {
-
         if (vm.lang == 'en') {
           layer.bindPopup('<h2>' + nameLang +'</h2>'
                       + '<table class="table table-condensed"><tbody>'
@@ -145,27 +156,31 @@
                       + '</tbody></table>', {minWidth: 500});
           }
         else {
-          var content = '<h2>' + nameLang +'</h2>'
-                    + '<table class="table table-condensed"><tbody>';
-          for (var key in vm.data[name]) {
-             content = content 
-                    + '<tr><td><strong>'
-                    + key
-                    + '</strong></td><td>' 
-                    + vm.data[name][key]
-                    + '</td></tr>';
-          }
-          layer.bindPopup(
-                    content
-                    + '<tr><td><strong>Source</strong></td><td>WRI, CAIT 2.0. 2015. CAIT Paris Contributions Map. Washington, DC: World Resources Institute. Available at: http://cait2.wri.org/indcs/</td></tr>'
-                    + '</tbody></table>', {minWidth: 500});
-        }
 
+          var content = getContent(name, nameLang);
+          layer.bindPopup(
+                    content, {minWidth: 500});
+        }
       }
       else {
         layer.bindPopup('<h2>' + nameLang
           +'</h2><p>' + vm.page.unsubmitted + '</p>');
       }
+
+    }
+
+    function getContent(name, nameLang) {
+      var content = '<h2>' + nameLang +'</h2>'
+                    + '<table class="table table-condensed"><tbody>';
+      for (var key in vm.data[name]) {
+         content = content 
+                + '<tr><td><strong>'
+                + key.substring(2)
+                + '</strong></td><td>' 
+                + vm.data[name][key]
+                + '</td></tr>';
+      }
+      return content + '</tbody></table>';     
     }
  
     function resetHighlight(e) {

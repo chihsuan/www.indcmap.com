@@ -68,15 +68,14 @@
       addTopoLayer();
       info.onAdd = addInfo;
       info.addTo(map);
+      legend.onAdd = addLegend;
+      legend.addTo(map);
       if ('EU' in vm.data) {
           var content = getContent('EU', '歐盟');
           L.marker([50.843611, 4.382418], {icon: euIcon}).addTo(map).bindPopup(content); 
           return;
       }
 
-
-      legend.onAdd = addLegend;
-      legend.addTo(map);
     }
 
     function addTopoLayer () {
@@ -230,8 +229,8 @@
       var color = ['#D5D5D5', '#B50000'];
 
       for (var i = 0; i < vm.page.labels.length; i++) {
-        div.innerHTML += '<i style="background:' + color[i] 
-                      + '"></i>' + vm.page.labels[i] + '<br/>';
+        div.innerHTML += '<div><i style="background:' + color[i] 
+                      + '"></i>' + vm.page.labels[i] + '<div/>';
       }
       return div;
     }

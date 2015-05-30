@@ -19,7 +19,7 @@ def read_csv(file_name):
 
 def write_json(file_name, content):
     with open(file_name, 'w') as output_file:
-        json.dump(content, output_file, indent=4)
+        json.dump(content, output_file, indent=4, sort_keys=True)
 
 data = read_csv(sys.argv[1])
 output = {}
@@ -35,6 +35,9 @@ for i in range(1, len(data)):
     country = data[i][0]
     output[country] = {}
     for j in range(1, len(data[i])):
-        output[country][header[j]] = data[i][j]
+        if 'http' in data[i][j]:
+            output[country][header[j]] = '<a href="' + data[i][j] + '">' + data[i][j] + '</a>'
+        else:
+            output[country][header[j]] = data[i][j]
 
-write_json('./data/data.json', output)
+write_json(sys.argv[2], output)

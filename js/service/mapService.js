@@ -236,7 +236,6 @@
                         ? vm.page.labels[i]
                         : vm.page.labels[i] + '（'+ Object.keys(vm.data).length + '）'
                       ) + '</div>';
-        console.log(div.innerHTML);
       }
       return div;
     }

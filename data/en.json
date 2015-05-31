@@ -17,5 +17,6 @@
     "labels" : ["INDC unsubmitted", "INDC submitted"],
     "twycc": "TWYCC",
     "taiwanstat": "TaiwanStat",
-    "unsubmitted": "unsubmitted"
+    "unsubmitted": "unsubmitted",
+    "barInfo": "Global emissions covered by countries that submitted an INDC"
 }

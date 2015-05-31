@@ -20,4 +20,5 @@
   }
 
   require('./service/mapService');
+  require('./bar')();
 })();

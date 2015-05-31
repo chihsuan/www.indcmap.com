@@ -6,8 +6,8 @@
   
   mapService.$inject = ['$http'];
   var euIcon = L.icon({
-    iconUrl: 'http://europa.eu/wel/template-2011/images/europa-flag.gif',
-    iconSize:     [25, 25], // size of the icon
+    iconUrl: 'http://europa.eu/wel/images/eu_portal/quick_eu_flag.gif',
+    iconSize:     [25, 20], // size of the icon
     iconAnchor:   [17, 42], // point of the icon which will correspond to marker's location
     popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
   });
@@ -45,11 +45,13 @@
         $('.leaflet-top').hide();
         $('.leaflet-bottom').hide();
         $('.penguin').hide();
+        $('#bar').hide();
       });
       map.on('popupclose', function(e) {
         $('.leaflet-top').show();
         $('.leaflet-bottom').show();
         $('.penguin').show();
+        $('#bar').show();
       });
     }
 
@@ -229,8 +231,12 @@
       var color = ['#D5D5D5', '#B50000'];
 
       for (var i = 0; i < vm.page.labels.length; i++) {
-        div.innerHTML += '<div><i style="background:' + color[i] 
-                      + '"></i>' + vm.page.labels[i] + '<div/>';
+        div.innerHTML += '<div><i style="background:' + color[i]  + '"></i>'
+                      + (i == 0 
+                        ? vm.page.labels[i]
+                        : vm.page.labels[i] + '（'+ Object.keys(vm.data).length + '）'
+                      ) + '</div>';
+        console.log(div.innerHTML);
       }
       return div;
     }

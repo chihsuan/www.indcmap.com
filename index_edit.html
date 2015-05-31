@@ -53,6 +53,9 @@
       </div>
       </nav>
     </header>
+    <div id="bar">
+      <div class="info" ng-bind="page.barInfo"></div>
+    </div>
 
     <div id="map"></div>
     <img class="penguin" src="./img/penguin.png" />
@@ -113,6 +116,7 @@
     <footer>
     <div class="dev"><a href="http://twycc.org.tw/" ng-bind="page.twycc"></a> | <a href="http://www.taiwanstat.com/" ng-bind="page.taiwanstat"></a></div>
     </footer>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script src="./dist/index.js"></script>

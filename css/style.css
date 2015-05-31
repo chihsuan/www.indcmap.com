@@ -130,7 +130,37 @@ i.fa.fa-refresh {
     max-height: 400px;
     overflow: auto;
 }
-
+div#bar {
+  position: absolute;
+  z-index: 99;
+  top: 70px;
+  left: 50px;
+}
+svg.chart {
+  margin: 0;
+  padding: 0;
+  height: 20px;
+}
+.chart rect:first-of-type {
+  color: #fff;
+  stroke: #3994b6;
+  fill: white;
+}
+text:first-of-type {
+  fill: #fff;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.chart rect:nth-of-type(2) {
+  color: #fff;
+  stroke: transparent;
+  fill: #3994b6;
+}
+text:nth-of-type(2) {
+  fill: #a8d4e4;
+  font-family: sans-serif;
+  font-size: 12px;
+}
 
 @media only screen and (max-width: 700px) {
     .info.leaflet-control {
@@ -144,4 +174,8 @@ i.fa.fa-refresh {
     img.penguin {
         width: 80px;
     }
+    #bar .info {
+        width: 150px;
+    }
+
 }

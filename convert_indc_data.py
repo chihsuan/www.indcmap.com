@@ -24,12 +24,12 @@ def write_json(file_name, content):
 data = read_csv(sys.argv[1])
 output = {}
 header = data[0]
-for i in range(len(header)):
+'''for i in range(len(header)):
     words = header[i].split(' ')
     if len(words) > 1:
         header[i] = words[0] + words[1]
     else:
-        header[i] = words[0]
+        header[i] = words[0]'''
 
 for i in range(1, len(data)):
     country = data[i][0]

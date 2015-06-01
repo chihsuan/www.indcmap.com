@@ -4,7 +4,7 @@
   module.exports = angular.module('myApp')
                    .factory('mapService', mapService);
   
-  mapService.$inject = ['$http'];
+  mapService.$inject = ['$http', '$window'];
   var euIcon = L.icon({
     iconUrl: 'http://europa.eu/wel/images/eu_portal/quick_eu_flag.gif',
     iconSize:     [25, 20], // size of the icon
@@ -12,7 +12,7 @@
     popupAnchor:  [0, -35] // point from which the popup should open relative to the iconAnchor
   });
 
-  function mapService ($http) {
+  function mapService ($http, $window) {
    
     var vm = this;
     vm.updateLang = updateLang;
@@ -43,13 +43,13 @@
       map.setView(new L.LatLng(50, 15), 2);
       osm.addTo(map);
       map.on('popupopen', function(e) {
-        $('.leaflet-top').hide();
+        $('.leaflet-top.leaflet.right').hide();
         $('.leaflet-bottom').hide();
         $('.penguin').hide();
         $('#bar').hide();
       });
       map.on('popupclose', function(e) {
-        $('.leaflet-top').show();
+        $('.leaflet-top.leaflet-right').show();
         $('.leaflet-bottom').show();
         $('.penguin').show();
         $('#bar').show();

@@ -43,13 +43,13 @@
       map.setView(new L.LatLng(50, 15), 2);
       osm.addTo(map);
       map.on('popupopen', function(e) {
-        $('.leaflet-top.leaflet.right').hide();
+        $('div.leaflet-top.leaflet-right').hide();
         $('.leaflet-bottom').hide();
         $('.penguin').hide();
         $('#bar').hide();
       });
       map.on('popupclose', function(e) {
-        $('.leaflet-top.leaflet-right').show();
+        $('div.leaflet-top.leaflet-right').show();
         $('.leaflet-bottom').show();
         $('.penguin').show();
         $('#bar').show();

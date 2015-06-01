@@ -65,11 +65,16 @@
         <h3 class="panel-title" id="panel-title">{{page.navItem1}}<a class="anchorjs-link" href="#panel-title"><span class="anchorjs-icon"></span></a></h3>
       </div>
       <div class="panel-body">
-        <div class="logo"><a href="http://twycc.org.tw/"><img src="./img/twycc.png" height="42px" alt="台灣青年氣候聯盟" /></a></div><hr/>
+        <div class="logo"><a href="http://twycc.org.tw/"><img src="./img/twycc.png" height="42px" alt="台灣青年氣候聯盟" /></a>
+        <div class="fb-like-box" data-href="https://www.facebook.com/rocktwycc?fref=ts" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false" style="vertical-align: middle;"></div>
+        </div><hr/>
 
         <p>{{page.aboutUs.twycc}}</p><br/>
 
-        <div class="logo" id="taiwansat"><a href="http://www.taiwanstat.com/"><img src="./img/taiwansat.png" alt="用數據看台灣" height="40px" /></a></div><hr/>
+        <div class="logo" id="taiwansat"><a href="http://www.taiwanstat.com/"><img src="./img/taiwansat.png" alt="用數據看台灣" height="40px" /></a>
+        
+        <div class="fb-like-box" data-href="https://www.facebook.com/taiwanstat?fref=ts" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false" style="vertical-align: middle;"></div>
+        </div><hr/>
         <p>{{page.aboutUs.taiwanstat}}</p>
       </div>
     </section>
@@ -124,6 +129,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/contact_us.js"></script>
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=600079286760117&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
   </body>
 </html>
  

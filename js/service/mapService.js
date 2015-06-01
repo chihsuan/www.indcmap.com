@@ -27,6 +27,7 @@
       iconAnchor:   [17, 42], 
       popupAnchor:  [0, -35] 
     });
+    var euMarker = null;
    
     info.update = infoUpdate;
 
@@ -72,9 +73,13 @@
       info.addTo(map);
       legend.onAdd = addLegend;
       legend.addTo(map);
-      if ('EU' in vm.data) {
+      if ('Europen Union' in vm.data) {
           var content = getContent('EU', '歐盟');
-          L.marker([50.843611, 4.382418], {icon: euIcon}).addTo(map).bindPopup(content); 
+          if (euMarker) {
+            map.removeLayer(euMarker)
+          }
+          euMarker = L.marker([50.843611, 4.382418], {icon: euIcon});
+          euMarker.addTo(map).bindPopup(content); 
           return;
       }
 
@@ -138,30 +143,8 @@
         : name;
       
       if (name in vm.data) {
-        if (vm.lang == 'en') {
-          layer.bindPopup('<h2>' + nameLang +'</h2>'
-                      + '<table class="table table-condensed"><tbody>'
-                      + '<tr><td><strong>INDC summary</strong></td><td>' 
-                      + vm.data[name].INDCsummary
-                      + '</td></tr>'
-                      + '<tr><td><strong>INDC type</strong></td><td>' 
-                      + vm.data[name].INDCtype
-                      + '</td></tr>'
-                      + '<tr><td><strong>GHG target type</strong></td><td>' 
-                      + vm.data[name].GHGtarget
-                      + '</td></tr>'
-                      + '<tr><td><strong>Link to the submission</strong></td><td>' 
-                      + vm.data[name].Linkto
-                      + '</td></tr>'
-                      + '<tr><td><strong>Source</strong></td><td>WRI, CAIT 2.0. 2015. CAIT Paris Contributions Map. Washington, DC: World Resources Institute. Available at: http://cait2.wri.org/indcs/</td></tr>'
-                      + '</tbody></table>', {minWidth: 500});
-          }
-        else {
-
-          var content = getContent(name, nameLang);
-          layer.bindPopup(
-                    content, {minWidth: 500});
-        }
+        var content = getContent(name, nameLang);
+        layer.bindPopup(content, {minWidth: 500});
       }
       else {
         layer.bindPopup('<h2>' + nameLang

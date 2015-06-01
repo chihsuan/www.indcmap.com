@@ -73,14 +73,16 @@
       info.addTo(map);
       legend.onAdd = addLegend;
       legend.addTo(map);
+      // marker EU
       if ('Europen Union' in vm.data) {
-          var content = getContent('EU', '歐盟');
+          var name = 'Europen Union';
+          var nameLang = vm.lang == '/tw' ? '歐盟' : 'Europen Union';
+          var content = getContent(name, nameLang);
           if (euMarker) {
             map.removeLayer(euMarker)
           }
           euMarker = L.marker([50.843611, 4.382418], {icon: euIcon});
           euMarker.addTo(map).bindPopup(content); 
-          return;
       }
 
     }

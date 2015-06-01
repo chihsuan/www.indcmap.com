@@ -31,6 +31,7 @@
       else {
         $http.get('./data' + lang + 'Data.json').then(function(resp) {
           $http.get('./data' + lang +'.json').then(function(response) {
+            $location.path(lang);
             $rootScope.page = response.data;
             mapService.updateLang(lang, $rootScope.page, resp.data);
             langs[lang] = response.data;

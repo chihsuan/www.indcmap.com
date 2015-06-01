@@ -28,6 +28,7 @@
       popupAnchor:  [0, -35] 
     });
     var euMarker = null;
+    window.closePopup = closePopup;
    
     info.update = infoUpdate;
 
@@ -47,12 +48,18 @@
         $('.leaflet-bottom').hide();
         $('.penguin').hide();
         $('#bar').hide();
+        $('header').hide();
+        //if ($window.innerWidth < 768) {
+        $('.close-pop-up-button').show();
+        //}
       });
       map.on('popupclose', function(e) {
         $('div.leaflet-top.leaflet-right').show();
         $('.leaflet-bottom').show();
         $('.penguin').show();
         $('#bar').show();
+        $('header').show();
+        $('.close-pop-up-button').hide();
       });
     }
 
@@ -167,6 +174,10 @@
                 + '</td></tr>';
       }
       return content + '</tbody></table>';     
+    }
+
+    function closePopup() {
+      $(".leaflet-popup-close-button")[0].click();
     }
  
     function resetHighlight(e) {

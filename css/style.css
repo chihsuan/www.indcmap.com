@@ -42,9 +42,6 @@ a {
 #map .leaflet-top {
     top: 60px;
 }
-.info.leaflet-control {
-    min-width: 174px;
-}
 header {
     vertical-align: middle;
     display: table;
@@ -164,11 +161,12 @@ text:nth-of-type(2) {
 .leaflet-top.leaflet-left {
     display: none;
 }
+.info.legend.leaflet-control {
+  min-width: 185px;
+  width: 185px;
+}
 
 @media only screen and (max-width: 700px) {
-    .info.leaflet-control {
-        width: 140px;
-    }
     .leaflet-popup-content {
         width: 260px !important;
         max-height: 320px;
@@ -182,3 +180,16 @@ text:nth-of-type(2) {
     }
 
 }
+@media only screen and (max-width: 370px) {
+    .footer {
+        display: none;
+    }
+    .leaflet-control-attribution.leaflet-control {
+        display: none;
+    }
+     .info.leaflet-control {
+       min-width: 145px;
+       width: 145px;
+     }
+}
+ 

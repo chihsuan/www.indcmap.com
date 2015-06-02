@@ -25,6 +25,7 @@
     function setLang(lang) {
       if (lang in langs) {
         $location.path(lang);
+        lang = lang.substring(1);
         $rootScope.page = langs[lang];
         mapService.updateLang(lang, langs[lang], mapData[lang]);
       }
@@ -32,6 +33,7 @@
         $http.get('./data' + lang + 'Data.json').then(function(resp) {
           $http.get('./data' + lang +'.json').then(function(response) {
             $location.path(lang);
+            lang = lang.substring(1);
             $rootScope.page = response.data;
             mapService.updateLang(lang, $rootScope.page, resp.data);
             langs[lang] = response.data;

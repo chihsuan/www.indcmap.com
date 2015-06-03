@@ -23,7 +23,7 @@ ul li .laguage{margin:10px;background-color:rgba(248,248,248,.6)}
 .penguin{width:120px;margin:auto;bottom:60px}
 .leaflet-popup-content{max-height:400px;overflow:auto}
 div#bar{top:70px}
-svg.chart{margin:0;padding:0;height:20px}
+svg.chart{margin:0;padding:0;height:20px;stroke-width:5px}
 .chart rect:first-of-type{color:#fff;stroke:#3994b6;fill:#fff}
 text:first-of-type{fill:#fff;font-family:sans-serif;font-size:12px}
 .chart rect:nth-of-type(2){color:#fff;stroke:transparent;fill:#3994b6}

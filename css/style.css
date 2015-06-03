@@ -137,6 +137,7 @@ svg.chart {
   margin: 0;
   padding: 0;
   height: 20px;
+  stroke-width: 5px;
 }
 .chart rect:first-of-type {
   color: #fff;

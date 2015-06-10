@@ -10,6 +10,7 @@
     $scope.languages = {'Chinese - Traditional': '/tw', 'English': '/en'};
     $scope.selectedLang = supLang.indexOf(path) != -1 ? path : '/tw';
     $scope.changeLanguage = changeLanguage;
+    $scope.country = null;
     $rootScope.page = {};
     var langs = {};
     var mapData = {}
@@ -19,6 +20,7 @@
     function initCountryLang() {
       $http.get('./data/lang.json').then(function(resp) {
         mapService.countryLang = resp.data;
+        $scope.countries = Object.keys(resp.data).sort();
       });
     }
 

@@ -41,6 +41,13 @@
           <li><a href="#feedback" onclick="showInfo('#feedback')" ng-bind="page.navItem3"></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
+           <li>
+          <select class="form-control laguage"
+            ng-model="selectedCountry"
+            ng-options="c for c in countries"
+            ng-change="changeCountries()">
+          </select>
+           </li>
           <li>
           <select class="form-control laguage"
             ng-model="selectedLang"

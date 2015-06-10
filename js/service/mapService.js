@@ -83,7 +83,7 @@
       // marker EU
       if ('European Union' in vm.data) {
           var name = 'European Union';
-          var nameLang = vm.lang == '/tw' ? '歐盟' : 'European Union';
+          var nameLang = vm.lang == 'tw' ? '歐盟' : 'European Union';
           var content = getContent(name, nameLang);
           if (euMarker) {
             map.removeLayer(euMarker)

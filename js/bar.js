@@ -3,7 +3,7 @@
 
   module.exports = function() {
 
-    var data = [100, 31.6];
+    var data = [100, 54.7];
 
     var chart = d3.select("#bar")
       .insert("svg", ":first-child")

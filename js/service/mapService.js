@@ -100,7 +100,7 @@
         topoLayer.addTo(map);
       }
       else {
-        $http.get('./data/countries.geo.topo.json').then(function(response) {
+        $http.get('./data/countries.lang.geo.json').then(function(response) {
           countryJson = response.data;
           topoLayer = addTopoData(countryJson);
           topoLayer.addTo(map);
@@ -109,10 +109,10 @@
     }
 
     function addTopoData(topoData) {
-      var geojson;
-      for (var key in topoData.objects) {
+      var geojson = topoData;
+      /*for (var key in topoData.objects) {
         geojson = topojson.feature(topoData, topoData.objects[key]);
-      }
+      }*/
       return L.geoJson(geojson, {
         style: style,
         onEachFeature: onEachFeature

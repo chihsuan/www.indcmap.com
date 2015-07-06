@@ -75,11 +75,11 @@
         info = L.control();
         info.update = infoUpdate;
       }
-      addTopoLayer();
       info.onAdd = addInfo;
       info.addTo(map);
       legend.onAdd = addLegend;
       legend.addTo(map);
+      addTopoLayer();
       // marker EU
       if ('European Union' in vm.data) {
           var name = 'European Union';
@@ -100,10 +100,12 @@
         topoLayer.addTo(map);
       }
       else {
+        info.update('loading');
         $http.get('./data/countries.lang.geo.json').then(function(response) {
           countryJson = response.data;
           topoLayer = addTopoData(countryJson);
           topoLayer.addTo(map);
+          info.update();
         });
       }
     }
@@ -211,11 +213,15 @@
     };
 
     function infoUpdate (props) {
-      if (props) {
+      if (props && props != 'loading') {
         var name = vm.countryLang[props.name][vm.lang];
         this._div.innerHTML = name 
           ? '<h4>' + name +'</h4>'
           : '<h4>' + props.name + '</h4>';
+          console.log(props);
+      }
+      else if (props) {
+        this._div.innerHTML = '<h4>' + vm.page.loadingMsg +'</h4>';
       }
       else {
         this._div.innerHTML = '<h4>' + vm.page.selectCountry + '</h4>';

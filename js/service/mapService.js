@@ -99,6 +99,7 @@
       if (countryJson) {
         topoLayer = addTopoData(countryJson);
         topoLayer.addTo(map);
+        $('.leaflet-control-search').remove();
         searchControl = new L.Control.Search({layer: topoLayer,
          propertyName: 'name', position: 'topright'});
         map.addControl(searchControl);

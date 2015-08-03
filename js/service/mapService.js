@@ -28,6 +28,7 @@
       popupAnchor:  [0, -35] 
     });
     var euMarker = null;
+    var searchControl;
     window.closePopup = closePopup;
    
     info.update = infoUpdate;
@@ -98,6 +99,9 @@
       if (countryJson) {
         topoLayer = addTopoData(countryJson);
         topoLayer.addTo(map);
+        searchControl = new L.Control.Search({layer: topoLayer,
+         propertyName: 'name', position: 'topright'});
+        map.addControl(searchControl);
       }
       else {
         info.update('loading');
@@ -105,6 +109,9 @@
           countryJson = response.data;
           topoLayer = addTopoData(countryJson);
           topoLayer.addTo(map);
+          searchControl = new L.Control.Search({layer: topoLayer,
+            propertyName: 'name', position: 'topright'});
+          map.addControl(searchControl);
           info.update();
         });
       }
@@ -218,7 +225,6 @@
         this._div.innerHTML = name 
           ? '<h4>' + name +'</h4>'
           : '<h4>' + props.name + '</h4>';
-          console.log(props);
       }
       else if (props) {
         this._div.innerHTML = '<h4>' + vm.page.loadingMsg +'</h4>';

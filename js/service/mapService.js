@@ -81,18 +81,24 @@
       legend.onAdd = addLegend;
       legend.addTo(map);
       addTopoLayer();
+      addEUMaker();
       // marker EU
-      if ('European Union' in vm.data) {
-          var name = 'European Union';
-          var nameLang = vm.lang == 'tw' ? '歐盟' : 'European Union';
-          var content = getContent(name, nameLang);
-          if (euMarker) {
-            map.removeLayer(euMarker)
-          }
-          euMarker = L.marker([50.843611, 4.382418], {icon: euIcon});
-          euMarker.addTo(map).bindPopup(content); 
-      }
+      //if ('European Union' in vm.data) {
+    //}
 
+    }
+
+    function addEUMaker() {
+      var name = 'European Union';
+      var nameLang = vm.lang == 'tw' ? '歐盟' : 'European Union';
+      if (vm.lang == 'esp') nameLang = 'Unión Europea';
+
+      var content = getContent(name, nameLang);
+      if (euMarker) {
+        map.removeLayer(euMarker);
+      }
+      euMarker = L.marker([50.843611, 4.382418], {icon: euIcon});
+      euMarker.addTo(map).bindPopup(content); 
     }
 
     function addTopoLayer () {
@@ -160,7 +166,7 @@
       var nameLang = (vm.countryLang[name] && vm.countryLang[name][vm.lang])
         ? vm.countryLang[name][vm.lang]
         : name;
-      
+
       if (name in vm.data) {
         var content = getContent(name, nameLang);
         layer.bindPopup(content, {minWidth: 500});
@@ -173,15 +179,16 @@
     }
 
     function getContent(name, nameLang) {
-      var content = '<h2>' + nameLang +'</h2>'
-                    + '<table class="table table-condensed"><tbody>';
+      var content = '<h2>' + nameLang +'</h2>' +
+                     '<table class="table table-condensed"><tbody>';
+
       for (var key in vm.data[name]) {
-         content = content 
-                + '<tr><td><strong>'
-                + key.substring(2)
-                + '</strong></td><td>' 
-                + vm.data[name][key]
-                + '</td></tr>';
+         content = content +
+                 '<tr><td><strong>' + 
+                 key.substring(2) +
+                 '</strong></td><td>' + 
+                 vm.data[name][key] +
+                 '</td></tr>';
       }
       return content + '</tbody></table>';     
     }

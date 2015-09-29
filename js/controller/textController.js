@@ -1,19 +1,19 @@
 (function() {
-  'use strict'
+  'use strict';
 
   module.exports = textCtrl;
 
   function textCtrl ($scope, $rootScope, $location, $http, mapService) {
 
     var path = $location.path();
-    var supLang = ['/tw', '/en'];
-    $scope.languages = {'Chinese - Traditional': '/tw', 'English': '/en'};
+    var supLang = ['/tw', '/en', '/esp'];
+    $scope.languages = {'Chinese - Traditional': '/tw', 'English': '/en', 'Spanish': '/esp'};
     $scope.selectedLang = supLang.indexOf(path) != -1 ? path : '/tw';
     $scope.changeLanguage = changeLanguage;
     $scope.country = null;
     $rootScope.page = {};
     var langs = {};
-    var mapData = {}
+    var mapData = {};
     initCountryLang();
     setLang($scope.selectedLang);
 

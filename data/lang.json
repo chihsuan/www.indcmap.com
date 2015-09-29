@@ -1,749 +1,998 @@
 {
-  "Pitcairn Islands": {
-    "tw": "皮特凱恩群島"
-  },
-  "Haiti": {
-    "tw": "海地"
-  },
-  "Cambodia": {
-    "tw": "柬埔寨"
-  },
-  "Comoros": {
-    "tw": "科摩羅"
-  },
-  "Ukraine": {
-    "tw": "烏克蘭"
-  },
-  "Papua New Guinea": {
-    "tw": "巴布亞新幾內亞"
-  },
-  "Cyprus": {
-    "tw": "塞浦路斯"
-  },
-  "French Polynesia": {
-    "tw": "法屬玻里尼西亞"
-  },
-  "Ghana": {
-    "tw": "加纳"
-  },
-  "Solomon Islands": {
-    "tw": "所羅門群島"
-  },
-  "Maldives": {
-    "tw": "馬爾地夫"
-  },
-  "New Caledonia": {
-    "tw": "新喀里多尼亞"
-  },
-  "Austria": {
-    "tw": "奥地利"
-  },
-  "Western Sahara": {
-    "tw": "西撒哈拉"
-  },
-  "Clipperton Island": {
-    "tw": "克利珀頓島"
-  },
-  "Spratly Islands": {
-    "tw": null
-  },
-  "Vietnam": {
-    "tw": "越南"
-  },
-  "Monaco": {
-    "tw": "摩纳哥"
-  },
-  "Australia": {
-    "tw": "澳大利亞"
-  },
-  "Azerbaijan": {
-    "tw": "阿塞拜疆"
-  },
-  "Sri Lanka": {
-    "tw": "斯里蘭卡"
-  },
-  "Sierra Leone": {
-    "tw": "塞拉利昂"
-  },
-  "Brunei": {
-    "tw": "汶萊"
-  },
-  "Namibia": {
-    "tw": "纳米比亞"
-  },
-  "Saint Lucia": {
-    "tw": "聖露西亞"
-  },
-  "Bahrain": {
-    "tw": "巴林"
-  },
-  "Fiji": {
-    "tw": "斐濟"
-  },
-  "Republic of Congo": {
-    "tw": "剛果"
-  },
-  "Costa Rica": {
-    "tw": "哥斯達黎加"
-  },
-  "Georgia": {
-    "tw": "格鲁吉亞"
-  },
-  "Faroe Islands": {
-    "tw": null
-  },
-  "Aland": {
-    "tw": "奧蘭"
-  },
-  "Bangladesh": {
-    "tw": "孟加拉國"
-  },
-  "Czech Republic": {
-    "tw": "捷克共和國"
-  },
-  "Gabon": {
-    "tw": "加彭"
-  },
-  "North Korea": {
-    "tw": "朝鮮民主主義人民共和國"
-  },
-  "South Sudan": {
-    "tw": "南蘇丹"
-  },
-  "Poland": {
-    "tw": "波蘭"
-  },
-  "British Indian Ocean Territory": {
-    "tw": null
-  },
-  "The Bahamas": {
-    "tw": "巴哈馬"
-  },
-  "El Salvador": {
-    "tw": "薩爾瓦多"
-  },
-  "Japan": {
-    "tw": "日本"
-  },
-  "Serranilla Bank": {
-    "tw": null
-  },
-  "Jersey": {
-    "tw": null
-  },
-  "Israel": {
-    "tw": "以色列"
-  },
-  "Lithuania": {
-    "tw": "立陶宛"
-  },
-  "Nicaragua": {
-    "tw": "尼加拉瓜"
-  },
-  "China": {
-    "tw": "中國"
-  },
-  "Armenia": {
-    "tw": "亞美尼亞"
-  },
-  "Ireland": {
-    "tw": "愛爾蘭"
-  },
-  "Republic of Serbia": {
-    "tw": "賽爾維亞"
-  },
-  "Burundi": {
-    "tw": "布隆迪"
-  },
-  "Palestine": {
-    "tw": null
-  },
-  "Coral Sea Islands": {
-    "tw": null
-  },
-  "Iran": {
-    "tw": "伊朗（伊斯蘭共和國）"
-  },
-  "Afghanistan": {
-    "tw": "阿富汗"
-  },
-  "Netherlands": {
-    "tw": "荷蘭"
-  },
-  "Italy": {
-    "tw": "義大利"
-  },
-  "Bulgaria": {
-    "tw": "保加利亞"
-  },
-  "Dominican Republic": {
-    "tw": "多米尼加"
-  },
-  "Northern Mariana Islands": {
-    "tw": null
-  },
-  "Paraguay": {
-    "tw": "巴拉圭"
-  },
-  "Tonga": {
-    "tw": "湯加"
-  },
-  "Saint Vincent and the Grenadines": {
-    "tw": "聖文森及格瑞那丁"
-  },
-  "Togo": {
-    "tw": "多哥"
-  },
-  "Macao": {
-    "tw": null
-  },
-  "Nepal": {
-    "tw": "尼泊爾"
-  },
-  "Niger": {
-    "tw": "尼日"
-  },
-  "Barbados": {
-    "tw": "巴巴多斯"
-  },
-  "Bermuda": {
-    "tw": null
-  },
-  "Ivory Coast": {
-    "tw": "科特迪瓦"
-  },
-  "Bosnia and Herzegovina": {
-    "tw": "波斯尼亞和黑塞哥维那"
-  },
-  "Thailand": {
-    "tw": "泰國"
-  },
-  "Saint Martin": {
-    "tw": null
-  },
-  "Mexico": {
-    "tw": "墨西哥"
-  },
-  "Peru": {
-    "tw": "秘鲁"
-  },
-  "Jamaica": {
-    "tw": "牙買加"
-  },
-  "Timor-Leste": {
-    "tw": "東帝汶"
-  },
-  "Siachen Glacier": {
-    "tw": null
-  },
-  "Kenya": {
-    "tw": "肯尼亞"
-  },
-  "Wallis and Futuna": {
-    "tw": null
-  },
-  "Honduras": {
-    "tw": "洪都拉斯"
-  },
-  "Montserrat": {
-    "tw": null
-  },
-  "Rwanda": {
-    "tw": "盧安達"
-  },
-  "Laos": {
-    "tw": "寮國"
-  },
-  "Turkey": {
-    "tw": "土耳其"
-  },
-  "Isle of Man": {
-    "tw": null
-  },
-  "Qatar": {
-    "tw": "卡塔爾"
-  },
-  "Cape Verde": {
-    "tw": "佛得角"
-  },
-  "Equatorial Guinea": {
-    "tw": "赤道幾內亞"
-  },
-  "Indian Ocean Territories": {
-    "tw": null
-  },
-  "Mauritius": {
-    "tw": "毛里求斯"
-  },
-  "Aruba": {
-    "tw": null
-  },
-  "Greenland": {
-    "tw": "格陵蘭"
-  },
-  "Antarctica": {
-    "tw": null
-  },
-  "New Zealand": {
-    "tw": "紐西蘭"
-  },
-  "Syria": {
-    "tw": "阿拉伯敘利亞共和國"
-  },
-  "Taiwan": {
-    "tw": "台灣"
-  },
-  "Burkina Faso": {
-    "tw": "布基纳法索"
-  },
-  "Algeria": {
-    "tw": "阿爾及利亞"
-  },
-  "Mozambique": {
-    "tw": "莫桑比克"
-  },
-  "Somalia": {
-    "tw": "索馬里"
-  },
-  "Norway": {
-    "tw": "挪威"
-  },
-  "Madagascar": {
-    "tw": "馬達加斯加"
-  },
-  "Cameroon": {
-    "tw": "喀麥隆"
-  },
-  "Guernsey": {
-    "tw": null
-  },
-  "Hungary": {
-    "tw": "匈牙利"
-  },
-  "Turks and Caicos Islands": {
-    "tw": null
-  },
-  "Colombia": {
-    "tw": "哥倫比亞"
-  },
-  "Sao Tome and Principe": {
-    "tw": "聖多美和普林西比"
-  },
-  "Tunisia": {
-    "tw": "突尼斯"
-  },
-  "Portugal": {
-    "tw": "葡萄牙"
-  },
-  "Guatemala": {
-    "tw": "瓜地馬拉"
-  },
-  "United States of America": {
-    "tw": "美國"
-  },
-  "Spain": {
-    "tw": "西班牙"
-  },
-  "United States Minor Outlying Islands": {
-    "tw": null
-  },
-  "Puerto Rico": {
-    "tw": null
-  },
-  "Sint Maarten": {
-    "tw": null
-  },
-  "Slovakia": {
-    "tw": "斯洛伐克"
-  },
-  "Grenada": {
-    "tw": "格瑞那達"
-  },
-  "Kuwait": {
-    "tw": "科威特"
-  },
-  "Venezuela": {
-    "tw": "委内瑞拉（玻利瓦爾共和國）"
-  },
-  "Uganda": {
-    "tw": "烏干達"
-  },
-  "Argentina": {
-    "tw": "阿根廷"
-  },
-  "Democratic Republic of the Congo": {
-    "tw": "剛果民主共和國"
-  },
-  "Uruguay": {
-    "tw": "烏拉圭"
-  },
-  "Iceland": {
-    "tw": "冰島"
-  },
-  "Scarborough Reef": {
-    "tw": null
-  },
-  "United States Virgin Islands": {
-    "tw": null
-  },
-  "Cuba": {
-    "tw": "古巴"
-  },
-  "Kazakhstan": {
-    "tw": "哈薩克斯坦"
-  },
-  "Nigeria": {
-    "tw": "尼日利亞"
-  },
-  "Panama": {
-    "tw": "巴拿馬"
-  },
-  "Hong Kong": {
-    "tw": null
-  },
-  "Greece": {
-    "tw": "希臘"
-  },
-  "Swaziland": {
-    "tw": "斯威士蘭"
-  },
-  "Marshall Islands": {
-    "tw": "馬绍爾群岛"
-  },
-  "Curaçao": {
-    "tw": null
-  },
-  "Bhutan": {
-    "tw": "不丹"
-  },
-  "British Virgin Islands": {
-    "tw": null
-  },
-  "Anguilla": {
-    "tw": null
-  },
-  "Ethiopia": {
-    "tw": "衣索比亞"
-  },
-  "Senegal": {
-    "tw": "塞内加爾"
-  },
-  "Vatican": {
-    "tw": null
-  },
-  "Akrotiri Sovereign Base Area": {
-    "tw": null
-  },
-  "Saint Kitts and Nevis": {
-    "tw": "聖克里斯多福及尼維斯"
-  },
-  "Finland": {
-    "tw": "芬蘭"
-  },
-  "Belize": {
-    "tw": "伯利兹"
-  },
-  "Montenegro": {
-    "tw": "黑山"
-  },
-  "France": {
-    "tw": "法國"
-  },
-  "Mongolia": {
-    "tw": "蒙古"
-  },
-  "Zimbabwe": {
-    "tw": "辛巴威"
-  },
-  "India": {
-    "tw": "印度"
-  },
-  "Cayman Islands": {
-    "tw": null
-  },
-  "Niue": {
-    "tw": null
-  },
-  "Cook Islands": {
-    "tw": null
-  },
-  "Kiribati": {
-    "tw": "基里巴斯"
-  },
-  "Estonia": {
-    "tw": "爱沙尼亞"
-  },
-  "American Samoa": {
-    "tw": null
-  },
-  "Benin": {
-    "tw": "貝寧"
-  },
-  "United Republic of Tanzania": {
-    "tw": "坦桑尼亞聯合共和國"
-  },
-  "Falkland Islands": {
-    "tw": null
-  },
-  "Brazil": {
-    "tw": "巴西"
-  },
-  "Sudan": {
-    "tw": "蘇丹"
-  },
-  "Indonesia": {
-    "tw": "印度尼西亞"
-  },
-  "Uzbekistan": {
-    "tw": "烏兹别克斯坦"
-  },
-  "Egypt": {
-    "tw": "埃及"
-  },
-  "Eritrea": {
-    "tw": "厄立特里亞"
-  },
-  "Switzerland": {
-    "tw": "瑞士"
-  },
-  "Malta": {
-    "tw": "馬耳他"
-  },
-  "Kosovo": {
-    "tw": null
-  },
-  "Turkmenistan": {
-    "tw": "土庫曼斯坦"
-  },
-  "Belgium": {
-    "tw": "比利時"
-  },
-  "Guinea Bissau": {
-    "tw": "幾內亞比索"
-  },
-  "South Korea": {
-    "tw": "大韓民國"
-  },
-  "Saudi Arabia": {
-    "tw": "沙特阿拉伯"
-  },
-  "Botswana": {
-    "tw": "博茨瓦纳"
-  },
-  "Germany": {
-    "tw": "德國"
-  },
-  "Suriname": {
-    "tw": "蘇里南"
-  },
-  "Saint Pierre and Miquelon": {
-    "tw": null
-  },
-  "Mauritania": {
-    "tw": "毛里塔尼亞"
+  "Vanuatu": {
+    "tw": "瓦努阿圖",
+    "esp": "Vanuatu"
   },
   "Yemen": {
-    "tw": "葉門"
-  },
-  "Tajikistan": {
-    "tw": "塔吉克斯坦"
-  },
-  "Kyrgyzstan": {
-    "tw": "吉爾吉斯斯坦"
-  },
-  "United Arab Emirates": {
-    "tw": "阿拉伯聯合大公國"
-  },
-  "Antigua and Barbuda": {
-    "tw": "安提瓜和巴布達"
-  },
-  "Gambia": {
-    "tw": "甘比亞"
-  },
-  "Malawi": {
-    "tw": "馬拉维"
-  },
-  "United Kingdom": {
-    "tw": "英國"
-  },
-  "Bajo Nuevo Bank (Petrel Is.)": {
-    "tw": null
-  },
-  "South Georgia and South Sandwich Islands": {
-    "tw": null
-  },
-  "Andorra": {
-    "tw": "安道爾"
-  },
-  "Ecuador": {
-    "tw": "厄瓜多爾"
-  },
-  "Bolivia": {
-    "tw": "玻利维亞（多民族國）"
-  },
-  "Federated States of Micronesia": {
-    "tw": "密克羅尼西亞（聯邦）"
-  },
-  "Slovenia": {
-    "tw": "斯洛文尼亞"
-  },
-  "Croatia": {
-    "tw": "克羅地亞"
-  },
-  "Mali": {
-    "tw": "馬里"
-  },
-  "Heard Island and McDonald Islands": {
-    "tw": null
-  },
-  "Philippines": {
-    "tw": "菲律賓"
-  },
-  "Saint Helena": {
-    "tw": null
-  },
-  "San Marino": {
-    "tw": "聖馬力诺"
-  },
-  "Luxembourg": {
-    "tw": "盧森堡"
-  },
-  "Belarus": {
-    "tw": "白俄羅斯"
-  },
-  "Dhekelia Sovereign Base Area": {
-    "tw": null
-  },
-  "Liechtenstein": {
-    "tw": "列支敦士登"
-  },
-  "Trinidad and Tobago": {
-    "tw": "特立尼達和多巴哥"
-  },
-  "Nauru": {
-    "tw": "瑙鲁"
-  },
-  "Singapore": {
-    "tw": "新加坡"
-  },
-  "Guyana": {
-    "tw": "圭亞那"
-  },
-  "Morocco": {
-    "tw": "摩洛哥"
-  },
-  "French Southern and Antarctic Lands": {
-    "tw": null
-  },
-  "Guam": {
-    "tw": null
-  },
-  "Norfolk Island": {
-    "tw": null
-  },
-  "Vanuatu": {
-    "tw": "瓦努阿圖"
-  },
-  "Romania": {
-    "tw": "羅馬尼亞"
-  },
-  "Myanmar": {
-    "tw": "缅甸"
-  },
-  "Libya": {
-    "tw": "利比亞"
-  },
-  "Albania": {
-    "tw": "阿爾巴尼亞"
-  },
-  "Tuvalu": {
-    "tw": "吐瓦魯"
-  },
-  "Djibouti": {
-    "tw": "吉布提"
-  },
-  "Seychelles": {
-    "tw": "塞舌爾"
+    "tw": "葉門",
+    "esp": "Yemen (el)"
   },
   "Guinea": {
-    "tw": "幾內亞"
+    "tw": "幾內亞",
+    "esp": "Guinea"
   },
-  "Denmark": {
-    "tw": "丹麥"
+  "Armenia": {
+    "tw": "亞美尼亞",
+    "esp": "Armenia"
   },
-  "Liberia": {
-    "tw": "利比里亞"
+  "Benin": {
+    "tw": "貝寧",
+    "esp": "Benin"
   },
-  "Saint Barthelemy": {
-    "tw": null
+  "Paraguay": {
+    "tw": "巴拉圭",
+    "esp": "Paraguay (el)"
   },
-  "Sweden": {
-    "tw": "瑞典"
+  "Western Sahara": {
+    "tw": "西撒哈拉",
+    "esp": null
   },
-  "Lesotho": {
-    "tw": "莱索托"
+  "United Republic of Tanzania": {
+    "tw": "坦桑尼亞聯合共和國",
+    "esp": "República Unida de Tanzanía (la)"
   },
-  "South Africa": {
-    "tw": "南非"
+  "Belize": {
+    "tw": "伯利兹",
+    "esp": "Belice"
   },
-  "Iraq": {
-    "tw": "伊拉克"
+  "French Polynesia": {
+    "tw": "法屬玻里尼西亞",
+    "esp": null
   },
-  "Dominica": {
-    "tw": "多米尼克"
+  "Guyana": {
+    "tw": "圭亞那",
+    "esp": "Guyana"
   },
-  "Angola": {
-    "tw": "安哥拉"
+  "Malta": {
+    "tw": "馬耳他",
+    "esp": "Malta"
   },
-  "Latvia": {
-    "tw": "拉脱维亞"
+  "Philippines": {
+    "tw": "菲律賓",
+    "esp": "Filipinas"
   },
-  "Moldova": {
-    "tw": "摩爾多瓦共和國"
+  "Sint Maarten": {
+    "tw": null,
+    "esp": null
   },
-  "Jordan": {
-    "tw": "約旦"
+  "Burkina Faso": {
+    "tw": "布基纳法索",
+    "esp": "Burkina Faso"
   },
-  "Lebanon": {
-    "tw": "黎巴嫩"
+  "Ukraine": {
+    "tw": "烏克蘭",
+    "esp": "Ucrania"
   },
-  "Zambia": {
-    "tw": "尚比亞"
+  "Gambia": {
+    "tw": "甘比亞",
+    "esp": "Gambia"
   },
-  "Malaysia": {
-    "tw": "馬来西亞"
+  "Greenland": {
+    "tw": "格陵蘭",
+    "esp": null
   },
   "Central African Republic": {
-    "tw": "中非共和國"
+    "tw": "中非共和國",
+    "esp": "República Centroafricana (la)"
   },
-  "Gibraltar": {
-    "tw": null
+  "Lithuania": {
+    "tw": "立陶宛",
+    "esp": "Lituania"
   },
-  "Samoa": {
-    "tw": "薩摩亞"
+  "South Georgia and South Sandwich Islands": {
+    "tw": null,
+    "esp": null
   },
-  "Pakistan": {
-    "tw": "巴基斯坦"
+  "Akrotiri Sovereign Base Area": {
+    "tw": null,
+    "esp": null
+  },
+  "New Zealand": {
+    "tw": "紐西蘭",
+    "esp": "New Zealand"
+  },
+  "Cayman Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Jersey": {
+    "tw": null,
+    "esp": null
+  },
+  "Kazakhstan": {
+    "tw": "哈薩克斯坦",
+    "esp": "Kazajstán"
+  },
+  "Costa Rica": {
+    "tw": "哥斯達黎加",
+    "esp": "Costa Rica"
+  },
+  "Norfolk Island": {
+    "tw": null,
+    "esp": null
+  },
+  "Italy": {
+    "tw": "義大利",
+    "esp": "Italia"
+  },
+  "Lesotho": {
+    "tw": "莱索托",
+    "esp": "Lesotho"
+  },
+  "United States Virgin Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Clipperton Island": {
+    "tw": "克利珀頓島",
+    "esp": null
+  },
+  "Syria": {
+    "tw": "阿拉伯敘利亞共和國",
+    "esp": "República Árabe Siria (la)"
+  },
+  "Guernsey": {
+    "tw": null,
+    "esp": null
+  },
+  "Antarctica": {
+    "tw": null,
+    "esp": null
+  },
+  "Germany": {
+    "tw": "德國",
+    "esp": "Alemania"
+  },
+  "Nauru": {
+    "tw": "瑙鲁",
+    "esp": "Nauru"
+  },
+  "Bajo Nuevo Bank (Petrel Is.)": {
+    "tw": null,
+    "esp": null
+  },
+  "United States of America": {
+    "tw": "美國",
+    "esp": "Estados Unidos de América"
+  },
+  "Libya": {
+    "tw": "利比亞",
+    "esp": "Libia"
+  },
+  "Kosovo": {
+    "tw": null,
+    "esp": null
+  },
+  "Saint Lucia": {
+    "tw": "聖露西亞",
+    "esp": "Santa Lucía"
+  },
+  "Latvia": {
+    "tw": "拉脱维亞",
+    "esp": "Letonia"
+  },
+  "Republic of Congo": {
+    "tw": "剛果",
+    "esp": "Congo (el)"
+  },
+  "New Caledonia": {
+    "tw": "新喀里多尼亞",
+    "esp": null
+  },
+  "Croatia": {
+    "tw": "克羅地亞",
+    "esp": "Croacia"
+  },
+  "Egypt": {
+    "tw": "埃及",
+    "esp": "Egipto"
+  },
+  "Dominica": {
+    "tw": "多米尼克",
+    "esp": "Dominica"
+  },
+  "Comoros": {
+    "tw": "科摩羅",
+    "esp": "Comoras (las)"
+  },
+  "Uzbekistan": {
+    "tw": "烏兹别克斯坦",
+    "esp": "Uzbekistán"
+  },
+  "French Southern and Antarctic Lands": {
+    "tw": null,
+    "esp": null
+  },
+  "Pitcairn Islands": {
+    "tw": "皮特凱恩群島",
+    "esp": null
+  },
+  "Afghanistan": {
+    "tw": "阿富汗",
+    "esp": "Afganistán (el)"
+  },
+  "Vatican": {
+    "tw": null,
+    "esp": null
+  },
+  "Guatemala": {
+    "tw": "瓜地馬拉",
+    "esp": "Guatemala"
+  },
+  "Honduras": {
+    "tw": "洪都拉斯",
+    "esp": "Honduras"
+  },
+  "Kenya": {
+    "tw": "肯尼亞",
+    "esp": "Kenya"
+  },
+  "Venezuela": {
+    "tw": "委内瑞拉（玻利瓦爾共和國）",
+    "esp": "Venezuela (República Bolivariana de)"
+  },
+  "Namibia": {
+    "tw": "纳米比亞",
+    "esp": "Namibia"
+  },
+  "Nigeria": {
+    "tw": "尼日利亞",
+    "esp": "Nigeria"
+  },
+  "Botswana": {
+    "tw": "博茨瓦纳",
+    "esp": "Botswana"
+  },
+  "Saint Vincent and the Grenadines": {
+    "tw": "聖文森及格瑞那丁",
+    "esp": "San Vicente y las Granadinas"
+  },
+  "Mozambique": {
+    "tw": "莫桑比克",
+    "esp": "Mozambique"
+  },
+  "British Indian Ocean Territory": {
+    "tw": null,
+    "esp": null
   },
   "Chad": {
-    "tw": "查德"
+    "tw": "查德",
+    "esp": "Chad (el)"
   },
-  "Russia": {
-    "tw": "俄羅斯"
+  "Niger": {
+    "tw": "尼日",
+    "esp": "Níger (el)"
   },
-  "Macedonia": {
-    "tw": "前南斯拉夫的馬其顿共和國"
+  "Sudan": {
+    "tw": "蘇丹",
+    "esp": "Sudán (el)"
   },
-  "Palau": {
-    "tw": "帕勞"
+  "Austria": {
+    "tw": "奥地利",
+    "esp": "Austria"
+  },
+  "Lebanon": {
+    "tw": "黎巴嫩",
+    "esp": "Líbano (el)"
+  },
+  "Myanmar": {
+    "tw": "缅甸",
+    "esp": "Myanmar"
+  },
+  "United States Minor Outlying Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Sierra Leone": {
+    "tw": "塞拉利昂",
+    "esp": "Sierra Leona"
+  },
+  "Portugal": {
+    "tw": "葡萄牙",
+    "esp": "Portugal"
+  },
+  "Bahrain": {
+    "tw": "巴林",
+    "esp": "Bahrein"
+  },
+  "Bolivia": {
+    "tw": "玻利维亞（多民族國）",
+    "esp": "Bolivia (Estado Plurinacional de)"
+  },
+  "Finland": {
+    "tw": "芬蘭",
+    "esp": "Finlandia"
+  },
+  "Tonga": {
+    "tw": "湯加",
+    "esp": "Tonga"
+  },
+  "Netherlands": {
+    "tw": "荷蘭",
+    "esp": "Países Bajos (los)"
+  },
+  "Gibraltar": {
+    "tw": null,
+    "esp": null
+  },
+  "Uruguay": {
+    "tw": "烏拉圭",
+    "esp": "Uruguay (el)"
+  },
+  "Cape Verde": {
+    "tw": "佛得角",
+    "esp": "Cabo Verde"
+  },
+  "Trinidad and Tobago": {
+    "tw": "特立尼達和多巴哥",
+    "esp": "Trinidad and Tobago"
+  },
+  "Saudi Arabia": {
+    "tw": "沙特阿拉伯",
+    "esp": "Arabia Saudita (la)"
+  },
+  "Niue": {
+    "tw": null,
+    "esp": null
+  },
+  "Jamaica": {
+    "tw": "牙買加",
+    "esp": "Jamaica"
+  },
+  "Antigua and Barbuda": {
+    "tw": "安提瓜和巴布達",
+    "esp": "Antigua y Barbuda"
+  },
+  "Taiwan": {
+    "tw": "台灣",
+    "esp": null
+  },
+  "Belarus": {
+    "tw": "白俄羅斯",
+    "esp": "Belarús"
+  },
+  "Saint Kitts and Nevis": {
+    "tw": "聖克里斯多福及尼維斯",
+    "esp": "Saint Kitts y Nevis"
+  },
+  "Rwanda": {
+    "tw": "盧安達",
+    "esp": "Rwanda"
+  },
+  "Suriname": {
+    "tw": "蘇里南",
+    "esp": "Suriname"
+  },
+  "India": {
+    "tw": "印度",
+    "esp": "India (la)"
+  },
+  "Estonia": {
+    "tw": "爱沙尼亞",
+    "esp": "Estonia"
+  },
+  "American Samoa": {
+    "tw": null,
+    "esp": null
+  },
+  "Luxembourg": {
+    "tw": "盧森堡",
+    "esp": "Luxemburgo"
+  },
+  "China": {
+    "tw": "中國",
+    "esp": "China"
   },
   "Chile": {
-    "tw": "智利"
+    "tw": "智利",
+    "esp": "Chile"
   },
-  "Oman": {
-    "tw": "阿曼"
+  "Azerbaijan": {
+    "tw": "阿塞拜疆",
+    "esp": "Azerbaiyán"
+  },
+  "Mauritania": {
+    "tw": "毛里塔尼亞",
+    "esp": "Mauritania"
+  },
+  "Thailand": {
+    "tw": "泰國",
+    "esp": "Tailandia"
+  },
+  "Macao": {
+    "tw": null,
+    "esp": null
+  },
+  "Mongolia": {
+    "tw": "蒙古",
+    "esp": "Mongolia"
   },
   "Canada": {
-    "tw": "加拿大"
+    "tw": "加拿大",
+    "esp": "Canadá"
+  },
+  "Moldova": {
+    "tw": "摩爾多瓦共和國",
+    "esp": "República de Moldova (la)"
+  },
+  "Haiti": {
+    "tw": "海地",
+    "esp": "Haití"
+  },
+  "Greece": {
+    "tw": "希臘",
+    "esp": "Grecia"
+  },
+  "Hong Kong": {
+    "tw": null,
+    "esp": null
+  },
+  "Malawi": {
+    "tw": "馬拉维",
+    "esp": "Malawi"
+  },
+  "British Virgin Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Guinea Bissau": {
+    "tw": "幾內亞比索",
+    "esp": "Guinea-Bissau"
+  },
+  "Mali": {
+    "tw": "馬里",
+    "esp": "Malí"
+  },
+  "Turkey": {
+    "tw": "土耳其",
+    "esp": "Turquía"
+  },
+  "Aland": {
+    "tw": "奧蘭",
+    "esp": null
+  },
+  "Oman": {
+    "tw": "阿曼",
+    "esp": "Omán"
+  },
+  "Marshall Islands": {
+    "tw": "馬绍爾群岛",
+    "esp": "Islas Marshall (las)"
+  },
+  "Bosnia and Herzegovina": {
+    "tw": "波斯尼亞和黑塞哥维那",
+    "esp": "Bosnia y Herzegovina"
+  },
+  "Andorra": {
+    "tw": "安道爾",
+    "esp": "Andorra"
+  },
+  "Gabon": {
+    "tw": "加彭",
+    "esp": "Gabón"
+  },
+  "Palau": {
+    "tw": "帕勞",
+    "esp": "Palau"
+  },
+  "Czech Republic": {
+    "tw": "捷克共和國",
+    "esp": "República Checa (la)"
+  },
+  "Bangladesh": {
+    "tw": "孟加拉國",
+    "esp": "Bangladesh"
+  },
+  "Ireland": {
+    "tw": "愛爾蘭",
+    "esp": "Irlanda"
+  },
+  "Indian Ocean Territories": {
+    "tw": null,
+    "esp": null
+  },
+  "Kyrgyzstan": {
+    "tw": "吉爾吉斯斯坦",
+    "esp": "Kirguistán"
+  },
+  "Turks and Caicos Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Uganda": {
+    "tw": "烏干達",
+    "esp": "Uganda"
+  },
+  "Nepal": {
+    "tw": "尼泊爾",
+    "esp": "Nepal"
+  },
+  "Montserrat": {
+    "tw": null,
+    "esp": null
+  },
+  "Switzerland": {
+    "tw": "瑞士",
+    "esp": "Suecia"
+  },
+  "The Bahamas": {
+    "tw": "巴哈馬",
+    "esp": "Bahamas (las)"
+  },
+  "Qatar": {
+    "tw": "卡塔爾",
+    "esp": "Qatar"
+  },
+  "Singapore": {
+    "tw": "新加坡",
+    "esp": "Singapore"
+  },
+  "Coral Sea Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "France": {
+    "tw": "法國",
+    "esp": "Francia"
+  },
+  "Democratic Republic of the Congo": {
+    "tw": "剛果民主共和國",
+    "esp": "Democratic Republic of the Congo"
+  },
+  "Sweden": {
+    "tw": "瑞典",
+    "esp": "Suecia"
+  },
+  "Liberia": {
+    "tw": "利比里亞",
+    "esp": "Liberia"
+  },
+  "North Korea": {
+    "tw": "朝鮮民主主義人民共和國",
+    "esp": "República Popular Democrática de Corea (la)"
+  },
+  "Samoa": {
+    "tw": "薩摩亞",
+    "esp": "Samoa"
+  },
+  "Malaysia": {
+    "tw": "馬来西亞",
+    "esp": "Malasia"
+  },
+  "Panama": {
+    "tw": "巴拿馬",
+    "esp": "Panamá"
+  },
+  "Poland": {
+    "tw": "波蘭",
+    "esp": "Polonia"
+  },
+  "Zambia": {
+    "tw": "尚比亞",
+    "esp": "Zambia"
+  },
+  "Anguilla": {
+    "tw": null,
+    "esp": null
+  },
+  "Equatorial Guinea": {
+    "tw": "赤道幾內亞",
+    "esp": "Guinea Ecuatorial (la)"
+  },
+  "Australia": {
+    "tw": "澳大利亞",
+    "esp": "Australia"
+  },
+  "Sao Tome and Principe": {
+    "tw": "聖多美和普林西比",
+    "esp": "Santo Tomé y Príncipe"
+  },
+  "Maldives": {
+    "tw": "馬爾地夫",
+    "esp": "Maldivas"
+  },
+  "Angola": {
+    "tw": "安哥拉",
+    "esp": "Angola"
+  },
+  "Iceland": {
+    "tw": "冰島",
+    "esp": "Islandia"
+  },
+  "Norway": {
+    "tw": "挪威",
+    "esp": "Noruega"
+  },
+  "Liechtenstein": {
+    "tw": "列支敦士登",
+    "esp": "Liechtenstein"
+  },
+  "Denmark": {
+    "tw": "丹麥",
+    "esp": "Dinamarca"
+  },
+  "Northern Mariana Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Bhutan": {
+    "tw": "不丹",
+    "esp": "Bhután"
+  },
+  "Ghana": {
+    "tw": "加纳",
+    "esp": "Ghana"
+  },
+  "Dominican Republic": {
+    "tw": "多米尼加",
+    "esp": "Dominican Republic"
+  },
+  "Tajikistan": {
+    "tw": "塔吉克斯坦",
+    "esp": "Tayikistán"
+  },
+  "Heard Island and McDonald Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Cyprus": {
+    "tw": "塞浦路斯",
+    "esp": "Chipre"
+  },
+  "Togo": {
+    "tw": "多哥",
+    "esp": "Togo (el)"
+  },
+  "Senegal": {
+    "tw": "塞内加爾",
+    "esp": "Senegal (el)"
+  },
+  "Tuvalu": {
+    "tw": "吐瓦魯",
+    "esp": "Tuvalu"
+  },
+  "Puerto Rico": {
+    "tw": null,
+    "esp": null
+  },
+  "Somalia": {
+    "tw": "索馬里",
+    "esp": "Somalia"
+  },
+  "Seychelles": {
+    "tw": "塞舌爾",
+    "esp": "Seychelles"
+  },
+  "Iraq": {
+    "tw": "伊拉克",
+    "esp": "Iraq (el)"
+  },
+  "Macedonia": {
+    "tw": "前南斯拉夫的馬其顿共和國",
+    "esp": "la ex República Yugoslava de Macedonia"
+  },
+  "Romania": {
+    "tw": "羅馬尼亞",
+    "esp": "Rumania"
+  },
+  "Cuba": {
+    "tw": "古巴",
+    "esp": "Cuba"
+  },
+  "Iran": {
+    "tw": "伊朗（伊斯蘭共和國）",
+    "esp": "Irán (República Islámica del)"
+  },
+  "Zimbabwe": {
+    "tw": "辛巴威",
+    "esp": "Zimbabwe"
+  },
+  "Nicaragua": {
+    "tw": "尼加拉瓜",
+    "esp": "Nicaragua"
+  },
+  "Swaziland": {
+    "tw": "斯威士蘭",
+    "esp": "Swazilandia"
+  },
+  "San Marino": {
+    "tw": "聖馬力诺",
+    "esp": "San Marino"
+  },
+  "Slovenia": {
+    "tw": "斯洛文尼亞",
+    "esp": "Eslovenia"
+  },
+  "Japan": {
+    "tw": "日本",
+    "esp": "Japan"
+  },
+  "Saint Barthelemy": {
+    "tw": null,
+    "esp": null
+  },
+  "Spratly Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Saint Pierre and Miquelon": {
+    "tw": null,
+    "esp": null
+  },
+  "South Africa": {
+    "tw": "南非",
+    "esp": "Sudáfrica"
+  },
+  "Faroe Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Mexico": {
+    "tw": "墨西哥",
+    "esp": "México"
+  },
+  "Falkland Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Bulgaria": {
+    "tw": "保加利亞",
+    "esp": "Bulgaria"
+  },
+  "Fiji": {
+    "tw": "斐濟",
+    "esp": "Fiji"
+  },
+  "Timor-Leste": {
+    "tw": "東帝汶",
+    "esp": "Timor-Leste"
+  },
+  "South Sudan": {
+    "tw": "南蘇丹",
+    "esp": "Sudán del Sur"
+  },
+  "Djibouti": {
+    "tw": "吉布提",
+    "esp": "Djibouti"
+  },
+  "Algeria": {
+    "tw": "阿爾及利亞",
+    "esp": "Argelia"
+  },
+  "Monaco": {
+    "tw": "摩纳哥",
+    "esp": "Monaco"
+  },
+  "Jordan": {
+    "tw": "約旦",
+    "esp": "Jordania"
+  },
+  "Madagascar": {
+    "tw": "馬達加斯加",
+    "esp": "Madagascar"
+  },
+  "Russia": {
+    "tw": "俄羅斯",
+    "esp": "Rusia"
+  },
+  "Tunisia": {
+    "tw": "突尼斯",
+    "esp": "Túnez"
+  },
+  "Bermuda": {
+    "tw": null,
+    "esp": null
+  },
+  "Spain": {
+    "tw": "西班牙",
+    "esp": "España"
+  },
+  "Isle of Man": {
+    "tw": null,
+    "esp": null
+  },
+  "Montenegro": {
+    "tw": "黑山",
+    "esp": "Montenegro"
+  },
+  "Federated States of Micronesia": {
+    "tw": "密克羅尼西亞（聯邦）",
+    "esp": "Micronesia (Estados Federados de)"
+  },
+  "Saint Martin": {
+    "tw": null,
+    "esp": null
+  },
+  "Solomon Islands": {
+    "tw": "所羅門群島",
+    "esp": "Islas Salomón (las)"
+  },
+  "Barbados": {
+    "tw": "巴巴多斯",
+    "esp": "Barbados"
+  },
+  "Albania": {
+    "tw": "阿爾巴尼亞",
+    "esp": "Albania"
+  },
+  "Papua New Guinea": {
+    "tw": "巴布亞新幾內亞",
+    "esp": "Papua Nueva Guinea"
+  },
+  "Cameroon": {
+    "tw": "喀麥隆",
+    "esp": "Camerún (el)"
+  },
+  "Slovakia": {
+    "tw": "斯洛伐克",
+    "esp": "Eslovaquia"
+  },
+  "Peru": {
+    "tw": "秘鲁",
+    "esp": "Perú (el)"
+  },
+  "Mauritius": {
+    "tw": "毛里求斯",
+    "esp": "Mauricio"
+  },
+  "Dhekelia Sovereign Base Area": {
+    "tw": null,
+    "esp": null
+  },
+  "United Kingdom": {
+    "tw": "英國",
+    "esp": "el Reino Unido de Gran Bretaña e Irlanda del Norte (el)"
+  },
+  "Burundi": {
+    "tw": "布隆迪",
+    "esp": "Burundi"
+  },
+  "Laos": {
+    "tw": "寮國",
+    "esp": "República Democrática Popular Lao (la)"
+  },
+  "Guam": {
+    "tw": null,
+    "esp": null
+  },
+  "Grenada": {
+    "tw": "格瑞那達",
+    "esp": "Granada"
+  },
+  "Israel": {
+    "tw": "以色列",
+    "esp": "Israel"
+  },
+  "Wallis and Futuna": {
+    "tw": null,
+    "esp": null
+  },
+  "El Salvador": {
+    "tw": "薩爾瓦多",
+    "esp": "El Salvador"
+  },
+  "Kiribati": {
+    "tw": "基里巴斯",
+    "esp": "Kiribati"
+  },
+  "Kuwait": {
+    "tw": "科威特",
+    "esp": "Kuwait"
+  },
+  "Palestine": {
+    "tw": null,
+    "esp": null
+  },
+  "Siachen Glacier": {
+    "tw": null,
+    "esp": null
+  },
+  "Curaçao": {
+    "tw": null,
+    "esp": null
+  },
+  "Argentina": {
+    "tw": "阿根廷",
+    "esp": "Argentina (la)"
+  },
+  "Cambodia": {
+    "tw": "柬埔寨",
+    "esp": "Camboya"
+  },
+  "Morocco": {
+    "tw": "摩洛哥",
+    "esp": "Marruecos"
+  },
+  "Georgia": {
+    "tw": "格鲁吉亞",
+    "esp": "Georgia"
+  },
+  "Brazil": {
+    "tw": "巴西",
+    "esp": "Brasil (el)"
+  },
+  "United Arab Emirates": {
+    "tw": "阿拉伯聯合大公國",
+    "esp": "Emiratos Árabes Unidos (los)"
+  },
+  "Cook Islands": {
+    "tw": null,
+    "esp": null
+  },
+  "Belgium": {
+    "tw": "比利時",
+    "esp": "Bélgica"
+  },
+  "Brunei": {
+    "tw": "汶萊",
+    "esp": "Brunei Darussalam"
+  },
+  "Vietnam": {
+    "tw": "越南",
+    "esp": "Viet Nam"
+  },
+  "Ethiopia": {
+    "tw": "衣索比亞",
+    "esp": "Etiopía"
+  },
+  "Republic of Serbia": {
+    "tw": "賽爾維亞",
+    "esp": "Republica de Serbia"
+  },
+  "Serranilla Bank": {
+    "tw": null,
+    "esp": null
+  },
+  "Ecuador": {
+    "tw": "厄瓜多爾",
+    "esp": "Ecuador (el)"
+  },
+  "Ivory Coast": {
+    "tw": "科特迪瓦",
+    "esp": "Côte d'Ivoire"
+  },
+  "Aruba": {
+    "tw": null,
+    "esp": null
+  },
+  "Pakistan": {
+    "tw": "巴基斯坦",
+    "esp": "Pakistán (el)"
+  },
+  "Saint Helena": {
+    "tw": null,
+    "esp": null
+  },
+  "South Korea": {
+    "tw": "大韓民國",
+    "esp": "Corea del Sur "
+  },
+  "Colombia": {
+    "tw": "哥倫比亞",
+    "esp": "Colombia"
+  },
+  "Indonesia": {
+    "tw": "印度尼西亞",
+    "esp": "Indonesia"
+  },
+  "Scarborough Reef": {
+    "tw": null,
+    "esp": null
+  },
+  "Sri Lanka": {
+    "tw": "斯里蘭卡",
+    "esp": "Sri Lanka"
+  },
+  "Eritrea": {
+    "tw": "厄立特里亞",
+    "esp": "Eritrea"
+  },
+  "Turkmenistan": {
+    "tw": "土庫曼斯坦",
+    "esp": "Turkmenistán"
+  },
+  "Hungary": {
+    "tw": "匈牙利",
+    "esp": "Hungría"
   }
 }

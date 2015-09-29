@@ -15,11 +15,13 @@ def read_json(file_name):
 
 data = read_json(sys.argv[1])
 data = data['features']
-output = {}
+output = read_json('./data/lang.json')
+tmp = read_json('./data/espData.json')
 for country in data:
     en = country['properties']['name']
-    zh = country['properties']['un_zh']
-    output[en] = {}
-    output[en]['tw'] = zh
-
+    output[en]['esp'] = output[en]['un_es']
+    del output[en]['un_es']
+    
+    '''un_es = country['properties']['un_es']
+    output[en]['un_es'] = un_es'''
 write_json('./data/lang.json', output)

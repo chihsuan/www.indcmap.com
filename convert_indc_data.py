@@ -34,6 +34,7 @@ header = data[0]
 for i in range(1, len(data)):
     country = data[i][0]
     output[country] = {}
+    print (country)
     for j in range(1, 4):
         if 'http' in data[i][j]:
             output[country][header[j]] = '<a href="' + data[i][j] + '">' + data[i][j] + '</a>'
